@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Formulario hecho con Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+  
+  <nav id="navbar" style="margin-bottom: 0px;">
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/contraseña.html">Generador Contraseña</a></li>
+                        <li><a href="/form.html">Formulario</a></li>
+                        <li><a href="https://www.incibe.es/">INCIBE</a></li>
+                        
+                    </ul>
+                </nav>
+  
+<body>
+
+<div class="container">
+  <h2>Formulario de Solicitud de ayuda de Ciberseguridad</h2>
+  <p>Hemos creado este formulario para ofrecer ayuda a quienes se vean necesitados en este ámbito y no sepan a qué recurrir</p>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Nombre:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Introduce tu nombre o alias" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="email2">¿Cuál es su problema?:</label>
+      <input type="email" class="form-control" id="email" placeholder="Denos una breve descripción de su situación" name="email">
+    </div>
+    <b>¿Cree que sus datos han sido comprometidos o ha pinchado en algún enlace sospechoso?:</b>
+    <div class="radio">
+  <label><input type="radio" name="optradio" checked>Sí</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="optradio">No</label>
+</div>
+    <button type="button" class="btn btn-default" onclick='document.getElementById("test").innerHTML = "Muchas gracias! Por favor, espere a recibir un correo con más información"'>Enviar</button>
+  </form>
+  <h2 id="test" style="text-align: center; text-decoration-line: underline;"></h2>
+</div>
+
+
+</body>
+</html>
+
+<style>
+  body {
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+                background-color: #08031A;
+                background-size: 250px;
+                color: #fceaff;
+            }
+  #navbar {
+                height: 40px;
+                background-color: #13092D;
+                /* navbar color */
+                width: 100%;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: #ED64F5;
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #a49cba;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+</style>
