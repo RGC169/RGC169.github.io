@@ -128,7 +128,7 @@ document.querySelector("div.password button").addEventListener(
         const pass = document.querySelector('input[type="text"]').value;
         navigator.clipboard.writeText(pass).then(() => {
             document.querySelector(
-                "div.password button").innerHTML = "copiado!";
+                "div.password button").innerHTML = "copiado";
             setTimeout(() => {
                 document.querySelector(
                     "div.password button").innerHTML = "copiar";
@@ -266,3 +266,4 @@ h1,h2,h3 {
             }
 
 </style>
+
