@@ -128,7 +128,7 @@ document.querySelector("div.password button").addEventListener(
         const pass = document.querySelector('input[type="text"]').value;
         navigator.clipboard.writeText(pass).then(() => {
             document.querySelector(
-                "div.password button").innerHTML = "copiado";
+                "div.password button").innerHTML = "hecho!";
             setTimeout(() => {
                 document.querySelector(
                     "div.password button").innerHTML = "copiar";
@@ -176,7 +176,7 @@ button {
     background-color: #002B80;
     color: #fff;
     text-transform: uppercase;
-    padding: 5px 15px;
+    padding: 5px;
     border: 0;
     border-radius: 10px;
 }
@@ -266,4 +266,5 @@ h1,h2,h3 {
             }
 
 </style>
+
 
